@@ -1,0 +1,1273 @@
+2023-08-29 21:12:03.463 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-29 21:12:03.513 +03:00 [DBG] Hosting starting
+2023-08-29 21:12:03.704 +03:00 [INF] Now listening on: https://localhost:7156
+2023-08-29 21:12:03.728 +03:00 [INF] Now listening on: http://localhost:5282
+2023-08-29 21:12:03.728 +03:00 [DBG] Loaded hosting startup assembly SimpleBank.API
+2023-08-29 21:12:03.729 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-29 21:12:03.729 +03:00 [INF] Hosting environment: Development
+2023-08-29 21:12:03.729 +03:00 [INF] Content root path: /Users/abdizamed/Projects/SimpleBank.API
+2023-08-29 21:12:03.729 +03:00 [DBG] Hosting started
+2023-08-29 21:12:03.737 +03:00 [DBG] Connection id "0HMT8NDP8TIJP" accepted.
+2023-08-29 21:12:03.737 +03:00 [DBG] Connection id "0HMT8NDP8TIJP" started.
+2023-08-29 21:12:04.740 +03:00 [DBG] Connection id "0HMT8NDP8TIJP" received FIN.
+2023-08-29 21:12:04.756 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-29 21:12:04.773 +03:00 [DBG] Connection id "0HMT8NDP8TIJP" stopped.
+2023-08-29 21:12:04.775 +03:00 [DBG] Connection id "0HMT8NDP8TIJP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 21:12:04.850 +03:00 [DBG] Connection id "0HMT8NDP8TIJQ" accepted.
+2023-08-29 21:12:04.851 +03:00 [DBG] Connection id "0HMT8NDP8TIJQ" started.
+2023-08-29 21:12:04.901 +03:00 [DBG] Connection 0HMT8NDP8TIJQ established using the following protocol: "Tls12"
+2023-08-29 21:12:04.926 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/swagger - -
+2023-08-29 21:12:04.926 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-29 21:12:04.936 +03:00 [DBG] No candidates found for the request path '/swagger'
+2023-08-29 21:12:04.936 +03:00 [DBG] Request did not match any endpoints
+2023-08-29 21:12:04.949 +03:00 [DBG] Connection id "0HMT8NDP8TIJQ" completed keep alive response.
+2023-08-29 21:12:04.950 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/swagger - - - 301 0 - 24.6095ms
+2023-08-29 21:12:04.954 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/swagger/index.html - -
+2023-08-29 21:12:04.954 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-08-29 21:12:04.954 +03:00 [DBG] Request did not match any endpoints
+2023-08-29 21:12:04.989 +03:00 [DBG] Connection id "0HMT8NDP8TIJQ" completed keep alive response.
+2023-08-29 21:12:04.989 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/swagger/index.html - - - 200 - text/html;charset=utf-8 35.0119ms
+2023-08-29 21:12:04.999 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/swagger/swagger-ui.css - -
+2023-08-29 21:12:05.000 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2023-08-29 21:12:05.000 +03:00 [DBG] Request did not match any endpoints
+2023-08-29 21:12:05.000 +03:00 [DBG] Connection id "0HMT8NDP8TIJR" accepted.
+2023-08-29 21:12:05.001 +03:00 [DBG] Connection id "0HMT8NDP8TIJR" started.
+2023-08-29 21:12:05.001 +03:00 [DBG] Connection id "0HMT8NDP8TIJS" accepted.
+2023-08-29 21:12:05.002 +03:00 [DBG] Connection id "0HMT8NDP8TIJS" started.
+2023-08-29 21:12:05.007 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-08-29 21:12:05.007 +03:00 [DBG] Connection id "0HMT8NDP8TIJQ" completed keep alive response.
+2023-08-29 21:12:05.007 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/swagger/swagger-ui.css - - - 200 144929 text/css 7.4670ms
+2023-08-29 21:12:05.011 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/swagger/swagger-ui-bundle.js - -
+2023-08-29 21:12:05.011 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2023-08-29 21:12:05.011 +03:00 [DBG] Request did not match any endpoints
+2023-08-29 21:12:05.185 +03:00 [DBG] Connection 0HMT8NDP8TIJS established using the following protocol: "Tls12"
+2023-08-29 21:12:05.185 +03:00 [DBG] Connection 0HMT8NDP8TIJR established using the following protocol: "Tls12"
+2023-08-29 21:12:05.217 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/swagger/swagger-ui-standalone-preset.js - -
+2023-08-29 21:12:05.217 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2023-08-29 21:12:05.217 +03:00 [DBG] Request did not match any endpoints
+2023-08-29 21:12:05.557 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-08-29 21:12:05.557 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-08-29 21:12:05.558 +03:00 [DBG] Connection id "0HMT8NDP8TIJR" completed keep alive response.
+2023-08-29 21:12:05.558 +03:00 [DBG] Connection id "0HMT8NDP8TIJQ" completed keep alive response.
+2023-08-29 21:12:05.558 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 342.5827ms
+2023-08-29 21:12:05.558 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 547.4987ms
+2023-08-29 21:12:05.566 +03:00 [DBG] Connection id "0HMT8NDP8TIJT" accepted.
+2023-08-29 21:12:05.566 +03:00 [DBG] Connection id "0HMT8NDP8TIJT" started.
+2023-08-29 21:12:05.588 +03:00 [DBG] Connection id "0HMT8NDP8TIJU" accepted.
+2023-08-29 21:12:05.589 +03:00 [DBG] Connection id "0HMT8NDP8TIJU" started.
+2023-08-29 21:12:05.627 +03:00 [DBG] Connection 0HMT8NDP8TIJT established using the following protocol: "Tls12"
+2023-08-29 21:12:05.629 +03:00 [DBG] Connection 0HMT8NDP8TIJU established using the following protocol: "Tls12"
+2023-08-29 21:12:05.630 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/swagger/swagger-ui-standalone-preset.js - -
+2023-08-29 21:12:05.630 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/swagger/swagger-ui-bundle.js - -
+2023-08-29 21:12:05.630 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2023-08-29 21:12:05.630 +03:00 [DBG] Request did not match any endpoints
+2023-08-29 21:12:05.630 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2023-08-29 21:12:05.630 +03:00 [DBG] Request did not match any endpoints
+2023-08-29 21:12:05.662 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-08-29 21:12:05.662 +03:00 [DBG] Connection id "0HMT8NDP8TIJT" completed keep alive response.
+2023-08-29 21:12:05.663 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 32.8601ms
+2023-08-29 21:12:05.691 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/swagger/v1/swagger.json - -
+2023-08-29 21:12:05.691 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-08-29 21:12:05.691 +03:00 [DBG] Request did not match any endpoints
+2023-08-29 21:12:05.761 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/swagger/favicon-32x32.png - -
+2023-08-29 21:12:05.814 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-08-29 21:12:05.815 +03:00 [DBG] Connection id "0HMT8NDP8TIJU" completed keep alive response.
+2023-08-29 21:12:05.815 +03:00 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2023-08-29 21:12:05.815 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 184.9765ms
+2023-08-29 21:12:05.815 +03:00 [DBG] Request did not match any endpoints
+2023-08-29 21:12:05.817 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-08-29 21:12:05.817 +03:00 [DBG] Connection id "0HMT8NDP8TIJQ" completed keep alive response.
+2023-08-29 21:12:05.817 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/swagger/favicon-32x32.png - - - 200 628 image/png 55.7885ms
+2023-08-29 21:12:05.873 +03:00 [DBG] Connection id "0HMT8NDP8TIJR" completed keep alive response.
+2023-08-29 21:12:05.873 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 181.9618ms
+2023-08-29 21:12:20.097 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/api/branches/BRSOM001/tellers/12 - -
+2023-08-29 21:12:20.103 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001/tellers/12'
+2023-08-29 21:12:20.110 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.GetTeller (SimpleBank.API)' with route pattern 'api/branches/{id}/tellers/{tellerId}' is valid for the request path '/api/branches/BRSOM001/tellers/12'
+2023-08-29 21:12:20.111 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.GetTeller (SimpleBank.API)'
+2023-08-29 21:12:20.111 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 21:12:20.114 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.GetTeller (SimpleBank.API)'
+2023-08-29 21:12:20.128 +03:00 [INF] Route matched with {action = "GetTeller", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SimpleBank.API.Models.TellerDto]] GetTeller(System.String, System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 21:12:20.129 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 21:12:20.129 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 21:12:20.129 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 21:12:20.129 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 21:12:20.129 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 21:12:20.130 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 21:12:20.130 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 21:12:20.133 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 21:12:20.134 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 21:12:20.134 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 21:12:20.134 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 21:12:20.134 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 21:12:20.137 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 21:12:20.138 +03:00 [DBG] Attempting to bind parameter 'tellerId' of type 'System.String' ...
+2023-08-29 21:12:20.138 +03:00 [DBG] Attempting to bind parameter 'tellerId' of type 'System.String' using the name 'tellerId' in request data ...
+2023-08-29 21:12:20.138 +03:00 [DBG] Done attempting to bind parameter 'tellerId' of type 'System.String'.
+2023-08-29 21:12:20.138 +03:00 [DBG] Done attempting to bind parameter 'tellerId' of type 'System.String'.
+2023-08-29 21:12:20.138 +03:00 [DBG] Attempting to validate the bound parameter 'tellerId' of type 'System.String' ...
+2023-08-29 21:12:20.138 +03:00 [DBG] Done attempting to validate the bound parameter 'tellerId' of type 'System.String'.
+2023-08-29 21:12:20.139 +03:00 [WRN] Branch with teller 12 not found
+2023-08-29 21:12:20.140 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-08-29 21:12:20.142 +03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]' and explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'. The content types in the accept header must be a subset of the explicitly set content types.
+2023-08-29 21:12:20.142 +03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-08-29 21:12:20.142 +03:00 [WRN] No output formatter was found for content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]' to write the response.
+2023-08-29 21:12:20.144 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.GetTeller (SimpleBank.API) in 13.3153ms
+2023-08-29 21:12:20.144 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.GetTeller (SimpleBank.API)'
+2023-08-29 21:12:20.144 +03:00 [DBG] Connection id "0HMT8NDP8TIJR" completed keep alive response.
+2023-08-29 21:12:20.144 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/api/branches/BRSOM001/tellers/12 - - - 406 0 - 48.9199ms
+2023-08-29 21:12:49.021 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/api/branches/BRSOM001/tellers/12 - -
+2023-08-29 21:12:49.022 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001/tellers/12'
+2023-08-29 21:12:49.022 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.GetTeller (SimpleBank.API)' with route pattern 'api/branches/{id}/tellers/{tellerId}' is valid for the request path '/api/branches/BRSOM001/tellers/12'
+2023-08-29 21:12:49.022 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.GetTeller (SimpleBank.API)'
+2023-08-29 21:12:49.023 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 21:12:49.023 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.GetTeller (SimpleBank.API)'
+2023-08-29 21:12:49.023 +03:00 [INF] Route matched with {action = "GetTeller", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SimpleBank.API.Models.TellerDto]] GetTeller(System.String, System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 21:12:49.023 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 21:12:49.023 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 21:12:49.024 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 21:12:49.024 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 21:12:49.024 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 21:12:49.028 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 21:12:49.028 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 21:12:49.028 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 21:12:49.028 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 21:12:49.028 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 21:12:49.029 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 21:12:49.029 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 21:12:49.029 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 21:12:49.029 +03:00 [DBG] Attempting to bind parameter 'tellerId' of type 'System.String' ...
+2023-08-29 21:12:49.029 +03:00 [DBG] Attempting to bind parameter 'tellerId' of type 'System.String' using the name 'tellerId' in request data ...
+2023-08-29 21:12:49.029 +03:00 [DBG] Done attempting to bind parameter 'tellerId' of type 'System.String'.
+2023-08-29 21:12:49.029 +03:00 [DBG] Done attempting to bind parameter 'tellerId' of type 'System.String'.
+2023-08-29 21:12:49.029 +03:00 [DBG] Attempting to validate the bound parameter 'tellerId' of type 'System.String' ...
+2023-08-29 21:12:49.029 +03:00 [DBG] Done attempting to validate the bound parameter 'tellerId' of type 'System.String'.
+2023-08-29 21:12:49.029 +03:00 [WRN] Branch with teller 12 not found
+2023-08-29 21:12:49.030 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-08-29 21:12:49.030 +03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]' and explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'. The content types in the accept header must be a subset of the explicitly set content types.
+2023-08-29 21:12:49.030 +03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-08-29 21:12:49.030 +03:00 [WRN] No output formatter was found for content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]' to write the response.
+2023-08-29 21:12:49.030 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.GetTeller (SimpleBank.API) in 6.2783ms
+2023-08-29 21:12:49.030 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.GetTeller (SimpleBank.API)'
+2023-08-29 21:12:49.030 +03:00 [DBG] Connection id "0HMT8NDP8TIJR" completed keep alive response.
+2023-08-29 21:12:49.031 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/api/branches/BRSOM001/tellers/12 - - - 406 0 - 9.2860ms
+2023-08-29 21:13:10.408 +03:00 [DBG] Connection id "0HMT8NDP8TIJS" received FIN.
+2023-08-29 21:13:10.418 +03:00 [DBG] Connection id "0HMT8NDP8TIJS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 21:13:10.420 +03:00 [DBG] Connection id "0HMT8NDP8TIJS" disconnecting.
+2023-08-29 21:13:10.426 +03:00 [DBG] Connection id "0HMT8NDP8TIJS" stopped.
+2023-08-29 21:17:11.408 +03:00 [DBG] Connection id "0HMT8NDP8TIJT" received FIN.
+2023-08-29 21:17:11.436 +03:00 [DBG] Connection id "0HMT8NDP8TIJU" received FIN.
+2023-08-29 21:17:11.436 +03:00 [DBG] Connection id "0HMT8NDP8TIJQ" received FIN.
+2023-08-29 21:17:11.436 +03:00 [DBG] Connection id "0HMT8NDP8TIJT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 21:17:11.436 +03:00 [DBG] Connection id "0HMT8NDP8TIJT" disconnecting.
+2023-08-29 21:17:11.439 +03:00 [DBG] Connection id "0HMT8NDP8TIJU" disconnecting.
+2023-08-29 21:17:11.439 +03:00 [DBG] Connection id "0HMT8NDP8TIJU" stopped.
+2023-08-29 21:17:11.441 +03:00 [DBG] Connection id "0HMT8NDP8TIJT" stopped.
+2023-08-29 21:17:11.442 +03:00 [DBG] Connection id "0HMT8NDP8TIJQ" disconnecting.
+2023-08-29 21:17:11.442 +03:00 [DBG] Connection id "0HMT8NDP8TIJQ" stopped.
+2023-08-29 21:17:11.443 +03:00 [DBG] Connection id "0HMT8NDP8TIJU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 21:17:11.444 +03:00 [DBG] Connection id "0HMT8NDP8TIJQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 21:18:06.513 +03:00 [DBG] Connection id "0HMT8NDP8TIJR" received FIN.
+2023-08-29 21:18:06.518 +03:00 [DBG] Connection id "0HMT8NDP8TIJR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 21:18:06.518 +03:00 [DBG] Connection id "0HMT8NDP8TIJR" disconnecting.
+2023-08-29 21:18:06.522 +03:00 [DBG] Connection id "0HMT8NDP8TIJR" stopped.
+2023-08-29 21:30:20.324 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-29 21:30:20.367 +03:00 [DBG] Hosting starting
+2023-08-29 21:30:20.542 +03:00 [INF] Now listening on: https://localhost:7156
+2023-08-29 21:30:20.543 +03:00 [INF] Now listening on: http://localhost:5282
+2023-08-29 21:30:20.543 +03:00 [DBG] Loaded hosting startup assembly SimpleBank.API
+2023-08-29 21:30:20.543 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-29 21:30:20.543 +03:00 [INF] Hosting environment: Development
+2023-08-29 21:30:20.543 +03:00 [INF] Content root path: /Users/abdizamed/Projects/SimpleBank.API
+2023-08-29 21:30:20.543 +03:00 [DBG] Hosting started
+2023-08-29 21:30:20.548 +03:00 [DBG] Connection id "0HMT8NO04TNLB" accepted.
+2023-08-29 21:30:20.548 +03:00 [DBG] Connection id "0HMT8NO04TNLB" started.
+2023-08-29 21:30:21.547 +03:00 [DBG] Connection id "0HMT8NO04TNLB" received FIN.
+2023-08-29 21:30:21.555 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-29 21:30:21.584 +03:00 [DBG] Connection id "0HMT8NO04TNLB" stopped.
+2023-08-29 21:30:21.587 +03:00 [DBG] Connection id "0HMT8NO04TNLB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 21:30:21.632 +03:00 [DBG] Connection id "0HMT8NO04TNLC" accepted.
+2023-08-29 21:30:21.633 +03:00 [DBG] Connection id "0HMT8NO04TNLC" started.
+2023-08-29 21:30:21.702 +03:00 [DBG] Connection 0HMT8NO04TNLC established using the following protocol: "Tls12"
+2023-08-29 21:30:21.725 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/swagger/index.html - -
+2023-08-29 21:30:21.726 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-29 21:30:21.736 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-08-29 21:30:21.736 +03:00 [DBG] Request did not match any endpoints
+2023-08-29 21:30:21.778 +03:00 [DBG] Connection id "0HMT8NO04TNLC" completed keep alive response.
+2023-08-29 21:30:21.779 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/swagger/index.html - - - 200 - text/html;charset=utf-8 54.6657ms
+2023-08-29 21:30:21.975 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/swagger/v1/swagger.json - -
+2023-08-29 21:30:21.975 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-08-29 21:30:21.975 +03:00 [DBG] Request did not match any endpoints
+2023-08-29 21:30:22.026 +03:00 [DBG] Connection id "0HMT8NO04TNLC" completed keep alive response.
+2023-08-29 21:30:22.026 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 51.2906ms
+2023-08-29 21:30:30.276 +03:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7156/api/branches/BRSOM001 - -
+2023-08-29 21:30:30.281 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 21:30:30.284 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 21:30:30.284 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 21:30:30.288 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 21:30:30.291 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 21:30:30.306 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 21:30:30.307 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 21:30:30.307 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 21:30:30.307 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 21:30:30.307 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 21:30:30.307 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 21:30:30.308 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 21:30:30.308 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 21:30:30.310 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 21:30:30.311 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 21:30:30.311 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 21:30:30.311 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 21:30:30.311 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 21:30:30.314 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 21:30:30.316 +03:00 [INF] Mail from info@sbank.com and to abdizamedmo@gmail.com
+2023-08-29 21:30:30.316 +03:00 [INF] Subject : Brand Deletion
+2023-08-29 21:30:30.316 +03:00 [INF] Message : Hey Sir we deleted this branch number 2091
+2023-08-29 21:30:30.318 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-08-29 21:30:30.320 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 11.5688ms
+2023-08-29 21:30:30.321 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 21:30:30.321 +03:00 [DBG] Connection id "0HMT8NO04TNLC" completed keep alive response.
+2023-08-29 21:30:30.321 +03:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7156/api/branches/BRSOM001 - - - 204 - - 44.5872ms
+2023-08-29 21:30:39.049 +03:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7156/api/branches/BRSOM001 - -
+2023-08-29 21:30:39.049 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 21:30:39.049 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 21:30:39.049 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 21:30:39.050 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 21:30:39.050 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 21:30:39.050 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 21:30:39.050 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 21:30:39.050 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 21:30:39.050 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 21:30:39.050 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 21:30:39.051 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 21:30:39.051 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 21:30:39.052 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 21:30:39.052 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 21:30:39.052 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 21:30:39.052 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 21:30:39.052 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 21:30:39.052 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 21:30:39.053 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 21:30:39.057 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-08-29 21:30:39.061 +03:00 [DBG] No information found on request to perform content negotiation.
+2023-08-29 21:30:39.061 +03:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2023-08-29 21:30:39.062 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2023-08-29 21:30:39.062 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-08-29 21:30:39.132 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 80.4766ms
+2023-08-29 21:30:39.132 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 21:30:39.132 +03:00 [DBG] Connection id "0HMT8NO04TNLC" completed keep alive response.
+2023-08-29 21:30:39.132 +03:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7156/api/branches/BRSOM001 - - - 404 161 application/problem+json;+charset=utf-8 82.9437ms
+2023-08-29 21:31:31.425 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-29 21:31:31.465 +03:00 [DBG] Hosting starting
+2023-08-29 21:31:31.479 +03:00 [INF] Now listening on: http://localhost:5282
+2023-08-29 21:31:31.480 +03:00 [DBG] Loaded hosting startup assembly SimpleBank.API
+2023-08-29 21:31:31.480 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-29 21:31:31.480 +03:00 [INF] Hosting environment: Development
+2023-08-29 21:31:31.480 +03:00 [INF] Content root path: /Users/abdizamed/Projects/SimpleBank.API
+2023-08-29 21:31:31.480 +03:00 [DBG] Hosting started
+2023-08-29 21:31:32.402 +03:00 [INF] Application is shutting down...
+2023-08-29 21:31:32.404 +03:00 [DBG] Hosting stopping
+2023-08-29 21:31:32.416 +03:00 [DBG] Hosting stopped
+2023-08-29 21:31:34.036 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-29 21:31:34.076 +03:00 [DBG] Hosting starting
+2023-08-29 21:31:34.091 +03:00 [INF] Now listening on: http://localhost:5282
+2023-08-29 21:31:34.091 +03:00 [DBG] Loaded hosting startup assembly SimpleBank.API
+2023-08-29 21:31:34.091 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-29 21:31:34.092 +03:00 [INF] Hosting environment: Development
+2023-08-29 21:31:34.092 +03:00 [INF] Content root path: /Users/abdizamed/Projects/SimpleBank.API
+2023-08-29 21:31:34.092 +03:00 [DBG] Hosting started
+2023-08-29 21:31:38.893 +03:00 [DBG] Connection id "0HMT8NONG2QCP" accepted.
+2023-08-29 21:31:38.893 +03:00 [DBG] Connection id "0HMT8NONG2QCP" started.
+2023-08-29 21:31:38.915 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5282/ - -
+2023-08-29 21:31:38.917 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-29 21:31:38.926 +03:00 [DBG] No candidates found for the request path '/'
+2023-08-29 21:31:38.927 +03:00 [DBG] Request did not match any endpoints
+2023-08-29 21:31:38.934 +03:00 [DBG] The request path  does not match the path filter
+2023-08-29 21:31:38.935 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-29 21:31:38.936 +03:00 [DBG] Connection id "0HMT8NONG2QCP" completed keep alive response.
+2023-08-29 21:31:38.937 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5282/ - - - 404 0 - 24.5192ms
+2023-08-29 21:31:54.004 +03:00 [DBG] Connection id "0HMT8NONG2QCQ" accepted.
+2023-08-29 21:31:54.005 +03:00 [DBG] Connection id "0HMT8NONG2QCQ" started.
+2023-08-29 21:31:54.014 +03:00 [DBG] Connection id "0HMT8NONG2QCQ" bad request data: "Detected a TLS handshake to an endpoint that does not have TLS enabled."
+Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Detected a TLS handshake to an endpoint that does not have TLS enabled.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.GetUnknownMethodLength(ReadOnlySpan`1 span)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, ReadOnlySpan`1 requestLine)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.ParseRequest(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TryParseRequest(ReadResult result, Boolean& endConnection)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2023-08-29 21:31:54.024 +03:00 [DBG] Connection id "0HMT8NONG2QCQ" disconnecting.
+2023-08-29 21:31:54.024 +03:00 [DBG] Connection id "0HMT8NONG2QCQ" stopped.
+2023-08-29 21:31:54.025 +03:00 [DBG] Connection id "0HMT8NONG2QCR" accepted.
+2023-08-29 21:31:54.026 +03:00 [DBG] Connection id "0HMT8NONG2QCQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 21:31:54.028 +03:00 [DBG] Connection id "0HMT8NONG2QCR" started.
+2023-08-29 21:31:54.028 +03:00 [DBG] Connection id "0HMT8NONG2QCR" bad request data: "Detected a TLS handshake to an endpoint that does not have TLS enabled."
+Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Detected a TLS handshake to an endpoint that does not have TLS enabled.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.GetUnknownMethodLength(ReadOnlySpan`1 span)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, ReadOnlySpan`1 requestLine)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.ParseRequest(SequenceReader`1& reader)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TryParseRequest(ReadResult result, Boolean& endConnection)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2023-08-29 21:31:54.030 +03:00 [DBG] Connection id "0HMT8NONG2QCR" disconnecting.
+2023-08-29 21:31:54.030 +03:00 [DBG] Connection id "0HMT8NONG2QCR" stopped.
+2023-08-29 21:31:54.030 +03:00 [DBG] Connection id "0HMT8NONG2QCR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 21:31:59.842 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 21:31:59.851 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 21:31:59.854 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.GetBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 21:31:59.854 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.GetBranch (SimpleBank.API)'
+2023-08-29 21:31:59.855 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 21:31:59.856 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.GetBranch (SimpleBank.API)'
+2023-08-29 21:31:59.865 +03:00 [INF] Route matched with {action = "GetBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[SimpleBank.API.Models.BranchDto] GetBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 21:31:59.865 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 21:31:59.865 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 21:31:59.865 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 21:31:59.866 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 21:31:59.866 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 21:31:59.866 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 21:31:59.867 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 21:31:59.868 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 21:31:59.869 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 21:31:59.869 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 21:31:59.869 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 21:31:59.869 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 21:31:59.871 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 21:31:59.873 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-08-29 21:31:59.874 +03:00 [DBG] No information found on request to perform content negotiation.
+2023-08-29 21:31:59.874 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-08-29 21:31:59.874 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-08-29 21:31:59.874 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-08-29 21:31:59.874 +03:00 [INF] Executing OkObjectResult, writing value of type 'SimpleBank.API.Models.BranchDto'.
+2023-08-29 21:31:59.915 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.GetBranch (SimpleBank.API) in 47.802ms
+2023-08-29 21:31:59.915 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.GetBranch (SimpleBank.API)'
+2023-08-29 21:31:59.915 +03:00 [DBG] Connection id "0HMT8NONG2QCP" completed keep alive response.
+2023-08-29 21:31:59.915 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5282/api/branches/BRSOM001 - - - 200 158 application/json;+charset=utf-8 73.2992ms
+2023-08-29 21:32:00.105 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5282/favicon.ico - -
+2023-08-29 21:32:00.105 +03:00 [DBG] No candidates found for the request path '/favicon.ico'
+2023-08-29 21:32:00.105 +03:00 [DBG] Request did not match any endpoints
+2023-08-29 21:32:00.106 +03:00 [DBG] The request path  does not match the path filter
+2023-08-29 21:32:00.106 +03:00 [DBG] Connection id "0HMT8NONG2QCP" completed keep alive response.
+2023-08-29 21:32:00.106 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5282/favicon.ico - - - 404 0 - 0.9472ms
+2023-08-29 21:32:47.685 +03:00 [DBG] Connection id "0HMT8NONG2QCS" received FIN.
+2023-08-29 21:32:47.685 +03:00 [DBG] Connection id "0HMT8NONG2QCS" accepted.
+2023-08-29 21:32:47.686 +03:00 [DBG] Connection id "0HMT8NONG2QCT" accepted.
+2023-08-29 21:32:47.691 +03:00 [DBG] Connection id "0HMT8NONG2QCS" started.
+2023-08-29 21:32:47.692 +03:00 [DBG] Connection id "0HMT8NONG2QCS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 21:32:47.692 +03:00 [DBG] Connection id "0HMT8NONG2QCS" disconnecting.
+2023-08-29 21:32:47.693 +03:00 [DBG] Connection id "0HMT8NONG2QCS" stopped.
+2023-08-29 21:32:47.693 +03:00 [DBG] Connection id "0HMT8NONG2QCT" started.
+2023-08-29 21:32:47.694 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 21:32:47.694 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 21:32:47.694 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 21:32:47.694 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 21:32:47.695 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 21:32:47.695 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 21:32:47.698 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 21:32:47.698 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 21:32:47.699 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 21:32:47.699 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 21:32:47.699 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 21:32:47.699 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 21:32:47.699 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 21:32:47.699 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 21:32:47.700 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 21:32:47.700 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 21:32:47.700 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 21:32:47.700 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 21:32:47.700 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 21:32:47.701 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 21:32:47.702 +03:00 [INF] Mail from info@sbank.com and to abdizamedmo@gmail.com
+2023-08-29 21:32:47.703 +03:00 [INF] Subject : Brand Deletion
+2023-08-29 21:32:47.703 +03:00 [INF] Message : Hey Sir we deleted this branch number 2091
+2023-08-29 21:32:47.706 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-08-29 21:32:47.706 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 6.8992ms
+2023-08-29 21:32:47.706 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 21:32:47.706 +03:00 [DBG] Connection id "0HMT8NONG2QCT" completed keep alive response.
+2023-08-29 21:32:47.706 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - - - 204 - - 12.3003ms
+2023-08-29 21:33:21.324 +03:00 [INF] Application is shutting down...
+2023-08-29 21:33:21.325 +03:00 [DBG] Hosting stopping
+2023-08-29 21:33:21.335 +03:00 [DBG] Connection id "0HMT8NONG2QCT" disconnecting.
+2023-08-29 21:33:21.335 +03:00 [DBG] Connection id "0HMT8NONG2QCP" disconnecting.
+2023-08-29 21:33:21.335 +03:00 [DBG] Connection id "0HMT8NONG2QCT" stopped.
+2023-08-29 21:33:21.335 +03:00 [DBG] Connection id "0HMT8NONG2QCP" stopped.
+2023-08-29 21:33:21.336 +03:00 [DBG] Connection id "0HMT8NONG2QCT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 21:33:21.336 +03:00 [DBG] Connection id "0HMT8NONG2QCP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 21:33:21.337 +03:00 [DBG] Hosting stopped
+2023-08-29 21:33:23.852 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-29 21:33:23.892 +03:00 [DBG] Hosting starting
+2023-08-29 21:33:23.907 +03:00 [INF] Now listening on: http://localhost:5282
+2023-08-29 21:33:23.907 +03:00 [DBG] Loaded hosting startup assembly SimpleBank.API
+2023-08-29 21:33:23.907 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-29 21:33:23.908 +03:00 [INF] Hosting environment: Development
+2023-08-29 21:33:23.908 +03:00 [INF] Content root path: /Users/abdizamed/Projects/SimpleBank.API
+2023-08-29 21:33:23.908 +03:00 [DBG] Hosting started
+2023-08-29 21:33:33.413 +03:00 [DBG] Connection id "0HMT8NPPK7HTF" received FIN.
+2023-08-29 21:33:33.422 +03:00 [DBG] Connection id "0HMT8NPPK7HTF" accepted.
+2023-08-29 21:33:33.423 +03:00 [DBG] Connection id "0HMT8NPPK7HTF" started.
+2023-08-29 21:33:33.423 +03:00 [DBG] Connection id "0HMT8NPPK7HTG" accepted.
+2023-08-29 21:33:33.424 +03:00 [DBG] Connection id "0HMT8NPPK7HTG" started.
+2023-08-29 21:33:33.427 +03:00 [DBG] Connection id "0HMT8NPPK7HTF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 21:33:33.429 +03:00 [DBG] Connection id "0HMT8NPPK7HTF" disconnecting.
+2023-08-29 21:33:33.430 +03:00 [DBG] Connection id "0HMT8NPPK7HTF" stopped.
+2023-08-29 21:33:33.440 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 21:33:33.441 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-29 21:33:33.450 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 21:33:33.452 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 21:33:33.452 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 21:33:33.457 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 21:33:33.458 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-29 21:33:33.459 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 21:33:33.465 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 21:33:33.466 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 21:33:33.466 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 21:33:33.466 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 21:33:33.466 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 21:33:33.466 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 21:33:33.467 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 21:33:33.467 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 21:33:33.469 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 21:33:33.470 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 21:33:33.470 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 21:33:33.470 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 21:33:33.470 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 21:33:33.472 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 21:33:33.476 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-08-29 21:33:33.477 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 9.3617ms
+2023-08-29 21:33:33.477 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 21:33:33.478 +03:00 [DBG] Connection id "0HMT8NPPK7HTG" completed keep alive response.
+2023-08-29 21:33:33.479 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - - - 204 - - 39.8616ms
+2023-08-29 21:35:42.255 +03:00 [INF] Application is shutting down...
+2023-08-29 21:35:42.257 +03:00 [DBG] Hosting stopping
+2023-08-29 21:35:42.268 +03:00 [DBG] Connection id "0HMT8NPPK7HTG" disconnecting.
+2023-08-29 21:35:42.269 +03:00 [DBG] Connection id "0HMT8NPPK7HTG" stopped.
+2023-08-29 21:35:42.269 +03:00 [DBG] Connection id "0HMT8NPPK7HTG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 21:35:42.272 +03:00 [DBG] Hosting stopped
+2023-08-29 21:35:44.777 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-29 21:35:44.816 +03:00 [DBG] Hosting starting
+2023-08-29 21:35:44.831 +03:00 [INF] Now listening on: http://localhost:5282
+2023-08-29 21:35:44.832 +03:00 [DBG] Loaded hosting startup assembly SimpleBank.API
+2023-08-29 21:35:44.832 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-29 21:35:44.832 +03:00 [INF] Hosting environment: Development
+2023-08-29 21:35:44.832 +03:00 [INF] Content root path: /Users/abdizamed/Projects/SimpleBank.API
+2023-08-29 21:35:44.832 +03:00 [DBG] Hosting started
+2023-08-29 21:35:47.597 +03:00 [DBG] Connection id "0HMT8NR1JTD59" received FIN.
+2023-08-29 21:35:47.600 +03:00 [DBG] Connection id "0HMT8NR1JTD59" accepted.
+2023-08-29 21:35:47.600 +03:00 [DBG] Connection id "0HMT8NR1JTD59" started.
+2023-08-29 21:35:47.601 +03:00 [DBG] Connection id "0HMT8NR1JTD5A" accepted.
+2023-08-29 21:35:47.601 +03:00 [DBG] Connection id "0HMT8NR1JTD5A" started.
+2023-08-29 21:35:47.611 +03:00 [DBG] Connection id "0HMT8NR1JTD59" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 21:35:47.618 +03:00 [DBG] Connection id "0HMT8NR1JTD59" disconnecting.
+2023-08-29 21:35:47.619 +03:00 [DBG] Connection id "0HMT8NR1JTD59" stopped.
+2023-08-29 21:35:47.630 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 21:35:47.630 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-29 21:35:47.639 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 21:35:47.641 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 21:35:47.641 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 21:35:47.646 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 21:35:47.646 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-29 21:35:47.647 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 21:35:47.653 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 21:35:47.653 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 21:35:47.654 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 21:35:47.654 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 21:35:47.654 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 21:35:47.654 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 21:35:47.654 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 21:35:47.654 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 21:35:47.656 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 21:35:47.657 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 21:35:47.657 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 21:35:47.657 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 21:35:47.657 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 21:35:47.658 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 21:35:47.659 +03:00 [DBG] Connection id "0HMT8NR1JTD5A" received FIN.
+2023-08-29 21:35:47.659 +03:00 [DBG] Connection id "0HMT8NR1JTD5A" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 21:35:47.659 +03:00 [DBG] Connection id "0HMT8NR1JTD5A" disconnecting.
+2023-08-29 21:35:47.661 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-08-29 21:35:47.663 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 7.5146ms
+2023-08-29 21:35:47.663 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 21:35:47.663 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - - - 0 - - 34.8110ms
+2023-08-29 21:35:47.664 +03:00 [DBG] Connection id "0HMT8NR1JTD5A" stopped.
+2023-08-29 22:45:01.988 +03:00 [INF] Application is shutting down...
+2023-08-29 22:45:01.990 +03:00 [DBG] Hosting stopping
+2023-08-29 22:45:02.000 +03:00 [DBG] Hosting stopped
+2023-08-29 22:47:05.872 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-29 22:47:05.915 +03:00 [DBG] Hosting starting
+2023-08-29 22:47:05.935 +03:00 [INF] Now listening on: http://localhost:5282
+2023-08-29 22:47:05.935 +03:00 [DBG] Loaded hosting startup assembly SimpleBank.API
+2023-08-29 22:47:05.935 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-29 22:47:05.935 +03:00 [INF] Hosting environment: Development
+2023-08-29 22:47:05.935 +03:00 [INF] Content root path: /Users/abdizamed/Projects/SimpleBank.API
+2023-08-29 22:47:05.935 +03:00 [DBG] Hosting started
+2023-08-29 22:47:08.691 +03:00 [DBG] Connection id "0HMT8P2TFJGNN" received FIN.
+2023-08-29 22:47:08.701 +03:00 [DBG] Connection id "0HMT8P2TFJGNN" accepted.
+2023-08-29 22:47:08.701 +03:00 [DBG] Connection id "0HMT8P2TFJGNN" started.
+2023-08-29 22:47:08.702 +03:00 [DBG] Connection id "0HMT8P2TFJGNO" accepted.
+2023-08-29 22:47:08.702 +03:00 [DBG] Connection id "0HMT8P2TFJGNO" started.
+2023-08-29 22:47:08.706 +03:00 [DBG] Connection id "0HMT8P2TFJGNN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:47:08.708 +03:00 [DBG] Connection id "0HMT8P2TFJGNN" disconnecting.
+2023-08-29 22:47:08.710 +03:00 [DBG] Connection id "0HMT8P2TFJGNN" stopped.
+2023-08-29 22:47:08.720 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 22:47:08.721 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-29 22:47:08.733 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 22:47:08.734 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 22:47:08.735 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:47:08.741 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 22:47:08.741 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-29 22:47:08.742 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:47:08.749 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 22:47:08.749 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 22:47:08.749 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 22:47:08.750 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 22:47:08.750 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 22:47:08.750 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 22:47:08.750 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:47:08.751 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:47:08.753 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 22:47:08.754 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 22:47:08.754 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:47:08.754 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:47:08.754 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 22:47:08.756 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 22:47:08.759 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-08-29 22:47:08.760 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 9.5613ms
+2023-08-29 22:47:08.761 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:47:08.761 +03:00 [DBG] Connection id "0HMT8P2TFJGNO" completed keep alive response.
+2023-08-29 22:47:08.762 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - - - 204 - - 42.7621ms
+2023-08-29 22:47:31.876 +03:00 [INF] Application is shutting down...
+2023-08-29 22:47:31.878 +03:00 [DBG] Hosting stopping
+2023-08-29 22:47:31.888 +03:00 [DBG] Connection id "0HMT8P2TFJGNO" disconnecting.
+2023-08-29 22:47:31.889 +03:00 [DBG] Connection id "0HMT8P2TFJGNO" stopped.
+2023-08-29 22:47:31.889 +03:00 [DBG] Connection id "0HMT8P2TFJGNO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:47:31.892 +03:00 [DBG] Hosting stopped
+2023-08-29 22:47:35.194 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-29 22:47:35.233 +03:00 [DBG] Hosting starting
+2023-08-29 22:47:35.248 +03:00 [INF] Now listening on: http://localhost:5282
+2023-08-29 22:47:35.248 +03:00 [DBG] Loaded hosting startup assembly SimpleBank.API
+2023-08-29 22:47:35.248 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-29 22:47:35.249 +03:00 [INF] Hosting environment: Development
+2023-08-29 22:47:35.249 +03:00 [INF] Content root path: /Users/abdizamed/Projects/SimpleBank.API
+2023-08-29 22:47:35.249 +03:00 [DBG] Hosting started
+2023-08-29 22:47:35.471 +03:00 [DBG] Connection id "0HMT8P35F0735" received FIN.
+2023-08-29 22:47:35.473 +03:00 [DBG] Connection id "0HMT8P35F0735" accepted.
+2023-08-29 22:47:35.473 +03:00 [DBG] Connection id "0HMT8P35F0735" started.
+2023-08-29 22:47:35.474 +03:00 [DBG] Connection id "0HMT8P35F0736" accepted.
+2023-08-29 22:47:35.474 +03:00 [DBG] Connection id "0HMT8P35F0736" started.
+2023-08-29 22:47:35.477 +03:00 [DBG] Connection id "0HMT8P35F0735" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:47:35.479 +03:00 [DBG] Connection id "0HMT8P35F0735" disconnecting.
+2023-08-29 22:47:35.480 +03:00 [DBG] Connection id "0HMT8P35F0735" stopped.
+2023-08-29 22:47:35.488 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 22:47:35.488 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-29 22:47:35.497 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 22:47:35.498 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 22:47:35.498 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:47:35.502 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 22:47:35.502 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-29 22:47:35.503 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:47:35.509 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 22:47:35.509 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 22:47:35.509 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 22:47:35.510 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 22:47:35.510 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 22:47:35.510 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 22:47:35.510 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:47:35.510 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:47:35.512 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 22:47:35.513 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 22:47:35.513 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:47:35.513 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:47:35.513 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 22:47:35.514 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 22:47:35.517 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-08-29 22:47:35.518 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 7.0273ms
+2023-08-29 22:47:35.518 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:47:35.518 +03:00 [DBG] Connection id "0HMT8P35F0736" completed keep alive response.
+2023-08-29 22:47:35.519 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - - - 204 - - 32.1814ms
+2023-08-29 22:47:36.279 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 22:47:36.280 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 22:47:36.280 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 22:47:36.281 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:47:36.282 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 22:47:36.282 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:47:36.283 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 22:47:36.284 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 22:47:36.284 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 22:47:36.286 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 22:47:36.287 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 22:47:36.287 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 22:47:36.288 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:47:36.288 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:47:36.289 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 22:47:36.289 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 22:47:36.289 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:47:36.289 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:47:36.289 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 22:47:36.290 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 22:47:36.292 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-08-29 22:47:36.293 +03:00 [DBG] No information found on request to perform content negotiation.
+2023-08-29 22:47:36.294 +03:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2023-08-29 22:47:36.295 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2023-08-29 22:47:36.295 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-08-29 22:47:36.353 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 65.4292ms
+2023-08-29 22:47:36.353 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:47:36.353 +03:00 [DBG] Connection id "0HMT8P35F0736" completed keep alive response.
+2023-08-29 22:47:36.354 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - - - 404 161 application/problem+json;+charset=utf-8 74.3282ms
+2023-08-29 22:47:40.894 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 22:47:40.894 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 22:47:40.895 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 22:47:40.895 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:47:40.898 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 22:47:40.900 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:47:40.900 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 22:47:40.900 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 22:47:40.901 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 22:47:40.901 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 22:47:40.901 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 22:47:40.903 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 22:47:40.903 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:47:40.904 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:47:40.904 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 22:47:40.905 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 22:47:40.905 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:47:40.905 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:47:40.905 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 22:47:40.905 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 22:47:40.906 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-08-29 22:47:40.906 +03:00 [DBG] No information found on request to perform content negotiation.
+2023-08-29 22:47:40.906 +03:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2023-08-29 22:47:40.906 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2023-08-29 22:47:40.906 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-08-29 22:47:40.908 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 5.2965ms
+2023-08-29 22:47:40.908 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:47:40.909 +03:00 [DBG] Connection id "0HMT8P35F0736" completed keep alive response.
+2023-08-29 22:47:40.909 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - - - 404 161 application/problem+json;+charset=utf-8 15.0604ms
+2023-08-29 22:47:42.306 +03:00 [INF] Application is shutting down...
+2023-08-29 22:47:42.307 +03:00 [DBG] Hosting stopping
+2023-08-29 22:47:42.316 +03:00 [DBG] Connection id "0HMT8P35F0736" disconnecting.
+2023-08-29 22:47:42.317 +03:00 [DBG] Connection id "0HMT8P35F0736" stopped.
+2023-08-29 22:47:42.317 +03:00 [DBG] Connection id "0HMT8P35F0736" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:47:42.319 +03:00 [DBG] Hosting stopped
+2023-08-29 22:47:43.731 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-29 22:47:43.769 +03:00 [DBG] Hosting starting
+2023-08-29 22:47:43.785 +03:00 [INF] Now listening on: http://localhost:5282
+2023-08-29 22:47:43.785 +03:00 [DBG] Loaded hosting startup assembly SimpleBank.API
+2023-08-29 22:47:43.786 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-29 22:47:43.786 +03:00 [INF] Hosting environment: Development
+2023-08-29 22:47:43.786 +03:00 [INF] Content root path: /Users/abdizamed/Projects/SimpleBank.API
+2023-08-29 22:47:43.786 +03:00 [DBG] Hosting started
+2023-08-29 22:47:45.193 +03:00 [DBG] Connection id "0HMT8P38BMRBL" received FIN.
+2023-08-29 22:47:45.202 +03:00 [DBG] Connection id "0HMT8P38BMRBL" accepted.
+2023-08-29 22:47:45.205 +03:00 [DBG] Connection id "0HMT8P38BMRBL" started.
+2023-08-29 22:47:45.205 +03:00 [DBG] Connection id "0HMT8P38BMRBM" accepted.
+2023-08-29 22:47:45.205 +03:00 [DBG] Connection id "0HMT8P38BMRBM" started.
+2023-08-29 22:47:45.209 +03:00 [DBG] Connection id "0HMT8P38BMRBL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:47:45.211 +03:00 [DBG] Connection id "0HMT8P38BMRBL" disconnecting.
+2023-08-29 22:47:45.212 +03:00 [DBG] Connection id "0HMT8P38BMRBL" stopped.
+2023-08-29 22:47:45.221 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 22:47:45.222 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-29 22:47:45.233 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 22:47:45.234 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 22:47:45.235 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:47:45.240 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 22:47:45.240 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-29 22:47:45.241 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:47:45.247 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 22:47:45.248 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 22:47:45.248 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 22:47:45.248 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 22:47:45.248 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 22:47:45.248 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 22:47:45.249 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:47:45.249 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:47:45.251 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 22:47:45.251 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 22:47:45.251 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:47:45.252 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:47:45.252 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 22:47:45.254 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 22:47:45.257 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-08-29 22:47:45.258 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 8.2678ms
+2023-08-29 22:47:45.258 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:47:45.258 +03:00 [DBG] Connection id "0HMT8P38BMRBM" completed keep alive response.
+2023-08-29 22:47:45.259 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - - - 204 - - 38.3711ms
+2023-08-29 22:49:13.801 +03:00 [INF] Application is shutting down...
+2023-08-29 22:49:13.803 +03:00 [DBG] Hosting stopping
+2023-08-29 22:49:13.813 +03:00 [DBG] Connection id "0HMT8P38BMRBM" disconnecting.
+2023-08-29 22:49:13.814 +03:00 [DBG] Connection id "0HMT8P38BMRBM" stopped.
+2023-08-29 22:49:13.814 +03:00 [DBG] Connection id "0HMT8P38BMRBM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:49:13.817 +03:00 [DBG] Hosting stopped
+2023-08-29 22:49:17.155 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-29 22:49:17.196 +03:00 [DBG] Hosting starting
+2023-08-29 22:49:17.212 +03:00 [INF] Now listening on: http://localhost:5282
+2023-08-29 22:49:17.212 +03:00 [DBG] Loaded hosting startup assembly SimpleBank.API
+2023-08-29 22:49:17.212 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-29 22:49:17.212 +03:00 [INF] Hosting environment: Development
+2023-08-29 22:49:17.212 +03:00 [INF] Content root path: /Users/abdizamed/Projects/SimpleBank.API
+2023-08-29 22:49:17.212 +03:00 [DBG] Hosting started
+2023-08-29 22:49:18.420 +03:00 [DBG] Connection id "0HMT8P444POCN" received FIN.
+2023-08-29 22:49:18.430 +03:00 [DBG] Connection id "0HMT8P444POCN" accepted.
+2023-08-29 22:49:18.433 +03:00 [DBG] Connection id "0HMT8P444POCN" started.
+2023-08-29 22:49:18.433 +03:00 [DBG] Connection id "0HMT8P444POCO" accepted.
+2023-08-29 22:49:18.434 +03:00 [DBG] Connection id "0HMT8P444POCO" started.
+2023-08-29 22:49:18.439 +03:00 [DBG] Connection id "0HMT8P444POCN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:49:18.441 +03:00 [DBG] Connection id "0HMT8P444POCN" disconnecting.
+2023-08-29 22:49:18.442 +03:00 [DBG] Connection id "0HMT8P444POCN" stopped.
+2023-08-29 22:49:18.452 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 22:49:18.453 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-29 22:49:18.462 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 22:49:18.463 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 22:49:18.464 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:49:18.469 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 22:49:18.469 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-29 22:49:18.470 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:49:18.477 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 22:49:18.478 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 22:49:18.478 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 22:49:18.478 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 22:49:18.478 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 22:49:18.479 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 22:49:18.479 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:49:18.480 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:49:18.482 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 22:49:18.483 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 22:49:18.483 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:49:18.483 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:49:18.483 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 22:49:18.485 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 22:49:18.488 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-08-29 22:49:18.489 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 9.2965ms
+2023-08-29 22:49:18.489 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:49:18.490 +03:00 [DBG] Connection id "0HMT8P444POCO" completed keep alive response.
+2023-08-29 22:49:18.491 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - - - 204 - - 39.8031ms
+2023-08-29 22:50:18.766 +03:00 [INF] Application is shutting down...
+2023-08-29 22:50:18.768 +03:00 [DBG] Hosting stopping
+2023-08-29 22:50:18.778 +03:00 [DBG] Connection id "0HMT8P444POCO" disconnecting.
+2023-08-29 22:50:18.778 +03:00 [DBG] Connection id "0HMT8P444POCO" stopped.
+2023-08-29 22:50:18.778 +03:00 [DBG] Connection id "0HMT8P444POCO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:50:18.781 +03:00 [DBG] Hosting stopped
+2023-08-29 22:50:20.446 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-29 22:50:20.483 +03:00 [DBG] Hosting starting
+2023-08-29 22:50:20.497 +03:00 [INF] Now listening on: http://localhost:5282
+2023-08-29 22:50:20.498 +03:00 [DBG] Loaded hosting startup assembly SimpleBank.API
+2023-08-29 22:50:20.498 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-29 22:50:20.498 +03:00 [INF] Hosting environment: Development
+2023-08-29 22:50:20.498 +03:00 [INF] Content root path: /Users/abdizamed/Projects/SimpleBank.API
+2023-08-29 22:50:20.498 +03:00 [DBG] Hosting started
+2023-08-29 22:50:23.271 +03:00 [DBG] Connection id "0HMT8P4NF8K2V" received FIN.
+2023-08-29 22:50:23.280 +03:00 [DBG] Connection id "0HMT8P4NF8K2V" accepted.
+2023-08-29 22:50:23.282 +03:00 [DBG] Connection id "0HMT8P4NF8K2V" started.
+2023-08-29 22:50:23.283 +03:00 [DBG] Connection id "0HMT8P4NF8K30" accepted.
+2023-08-29 22:50:23.283 +03:00 [DBG] Connection id "0HMT8P4NF8K30" started.
+2023-08-29 22:50:23.288 +03:00 [DBG] Connection id "0HMT8P4NF8K2V" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:50:23.290 +03:00 [DBG] Connection id "0HMT8P4NF8K2V" disconnecting.
+2023-08-29 22:50:23.291 +03:00 [DBG] Connection id "0HMT8P4NF8K2V" stopped.
+2023-08-29 22:50:23.301 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 22:50:23.302 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-29 22:50:23.312 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 22:50:23.313 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 22:50:23.314 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:50:23.319 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 22:50:23.319 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-29 22:50:23.320 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:50:23.327 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 22:50:23.327 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 22:50:23.328 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 22:50:23.328 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 22:50:23.328 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 22:50:23.328 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 22:50:23.329 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:50:23.329 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:50:23.331 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 22:50:23.331 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 22:50:23.332 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:50:23.332 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:50:23.334 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 22:50:23.337 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 22:50:23.340 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-08-29 22:50:23.341 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 11.8954ms
+2023-08-29 22:50:23.341 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:50:23.342 +03:00 [DBG] Connection id "0HMT8P4NF8K30" completed keep alive response.
+2023-08-29 22:50:23.342 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - - - 204 - - 42.3322ms
+2023-08-29 22:50:33.806 +03:00 [INF] Application is shutting down...
+2023-08-29 22:50:33.807 +03:00 [DBG] Hosting stopping
+2023-08-29 22:50:33.818 +03:00 [DBG] Connection id "0HMT8P4NF8K30" disconnecting.
+2023-08-29 22:50:33.819 +03:00 [DBG] Connection id "0HMT8P4NF8K30" stopped.
+2023-08-29 22:50:33.820 +03:00 [DBG] Connection id "0HMT8P4NF8K30" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:50:33.822 +03:00 [DBG] Hosting stopped
+2023-08-29 22:50:35.904 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-29 22:50:35.943 +03:00 [DBG] Hosting starting
+2023-08-29 22:50:35.959 +03:00 [INF] Now listening on: http://localhost:5282
+2023-08-29 22:50:35.960 +03:00 [DBG] Loaded hosting startup assembly SimpleBank.API
+2023-08-29 22:50:35.960 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-29 22:50:35.960 +03:00 [INF] Hosting environment: Development
+2023-08-29 22:50:35.960 +03:00 [INF] Content root path: /Users/abdizamed/Projects/SimpleBank.API
+2023-08-29 22:50:35.960 +03:00 [DBG] Hosting started
+2023-08-29 22:50:37.567 +03:00 [DBG] Connection id "0HMT8P4RNJ9CB" received FIN.
+2023-08-29 22:50:37.577 +03:00 [DBG] Connection id "0HMT8P4RNJ9CB" accepted.
+2023-08-29 22:50:37.578 +03:00 [DBG] Connection id "0HMT8P4RNJ9CB" started.
+2023-08-29 22:50:37.578 +03:00 [DBG] Connection id "0HMT8P4RNJ9CC" accepted.
+2023-08-29 22:50:37.578 +03:00 [DBG] Connection id "0HMT8P4RNJ9CC" started.
+2023-08-29 22:50:37.583 +03:00 [DBG] Connection id "0HMT8P4RNJ9CB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:50:37.585 +03:00 [DBG] Connection id "0HMT8P4RNJ9CB" disconnecting.
+2023-08-29 22:50:37.586 +03:00 [DBG] Connection id "0HMT8P4RNJ9CB" stopped.
+2023-08-29 22:50:37.597 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 22:50:37.598 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-29 22:50:37.608 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 22:50:37.609 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 22:50:37.609 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:50:37.615 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 22:50:37.615 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-29 22:50:37.617 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:50:37.624 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 22:50:37.624 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 22:50:37.624 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 22:50:37.624 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 22:50:37.625 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 22:50:37.625 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 22:50:37.625 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:50:37.626 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:50:37.627 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 22:50:37.628 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 22:50:37.628 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:50:37.628 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:50:37.628 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 22:50:37.630 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 22:50:37.633 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-08-29 22:50:37.635 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 8.887ms
+2023-08-29 22:50:37.635 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:50:37.636 +03:00 [DBG] Connection id "0HMT8P4RNJ9CC" completed keep alive response.
+2023-08-29 22:50:37.636 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - - - 204 - - 39.6890ms
+2023-08-29 22:50:41.990 +03:00 [INF] Application is shutting down...
+2023-08-29 22:50:41.991 +03:00 [DBG] Hosting stopping
+2023-08-29 22:50:42.002 +03:00 [DBG] Connection id "0HMT8P4RNJ9CC" disconnecting.
+2023-08-29 22:50:42.003 +03:00 [DBG] Connection id "0HMT8P4RNJ9CC" stopped.
+2023-08-29 22:50:42.003 +03:00 [DBG] Connection id "0HMT8P4RNJ9CC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:50:42.006 +03:00 [DBG] Hosting stopped
+2023-08-29 22:50:50.175 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-29 22:50:50.213 +03:00 [DBG] Hosting starting
+2023-08-29 22:50:50.228 +03:00 [INF] Now listening on: http://localhost:5282
+2023-08-29 22:50:50.228 +03:00 [DBG] Loaded hosting startup assembly SimpleBank.API
+2023-08-29 22:50:50.229 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-29 22:50:50.229 +03:00 [INF] Hosting environment: Development
+2023-08-29 22:50:50.229 +03:00 [INF] Content root path: /Users/abdizamed/Projects/SimpleBank.API
+2023-08-29 22:50:50.229 +03:00 [DBG] Hosting started
+2023-08-29 22:50:52.688 +03:00 [DBG] Connection id "0HMT8P507PMFB" received FIN.
+2023-08-29 22:50:52.695 +03:00 [DBG] Connection id "0HMT8P507PMFB" accepted.
+2023-08-29 22:50:52.697 +03:00 [DBG] Connection id "0HMT8P507PMFB" started.
+2023-08-29 22:50:52.698 +03:00 [DBG] Connection id "0HMT8P507PMFC" accepted.
+2023-08-29 22:50:52.698 +03:00 [DBG] Connection id "0HMT8P507PMFC" started.
+2023-08-29 22:50:52.702 +03:00 [DBG] Connection id "0HMT8P507PMFB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:50:52.705 +03:00 [DBG] Connection id "0HMT8P507PMFB" disconnecting.
+2023-08-29 22:50:52.705 +03:00 [DBG] Connection id "0HMT8P507PMFB" stopped.
+2023-08-29 22:50:52.714 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 22:50:52.715 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-29 22:50:52.724 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 22:50:52.726 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 22:50:52.726 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:50:52.733 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 22:50:52.733 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-29 22:50:52.734 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:50:52.741 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 22:50:52.742 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 22:50:52.742 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 22:50:52.742 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 22:50:52.742 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 22:50:52.742 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 22:50:52.743 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:50:52.743 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:50:52.745 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 22:50:52.746 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 22:50:52.746 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:50:52.746 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:50:52.746 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 22:50:52.748 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 22:50:52.751 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-08-29 22:50:52.752 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 8.3771ms
+2023-08-29 22:50:52.752 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:50:52.753 +03:00 [DBG] Connection id "0HMT8P507PMFC" completed keep alive response.
+2023-08-29 22:50:52.754 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - - - 204 - - 40.0400ms
+2023-08-29 22:51:45.385 +03:00 [INF] Application is shutting down...
+2023-08-29 22:51:45.387 +03:00 [DBG] Hosting stopping
+2023-08-29 22:51:45.398 +03:00 [DBG] Connection id "0HMT8P507PMFC" disconnecting.
+2023-08-29 22:51:45.399 +03:00 [DBG] Connection id "0HMT8P507PMFC" stopped.
+2023-08-29 22:51:45.399 +03:00 [DBG] Connection id "0HMT8P507PMFC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:51:45.401 +03:00 [DBG] Hosting stopped
+2023-08-29 22:51:48.880 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-29 22:51:48.926 +03:00 [DBG] Hosting starting
+2023-08-29 22:51:48.943 +03:00 [INF] Now listening on: http://localhost:5282
+2023-08-29 22:51:48.943 +03:00 [DBG] Loaded hosting startup assembly SimpleBank.API
+2023-08-29 22:51:48.943 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-29 22:51:48.943 +03:00 [INF] Hosting environment: Development
+2023-08-29 22:51:48.943 +03:00 [INF] Content root path: /Users/abdizamed/Projects/SimpleBank.API
+2023-08-29 22:51:48.944 +03:00 [DBG] Hosting started
+2023-08-29 22:51:53.744 +03:00 [DBG] Connection id "0HMT8P5IE2L01" received FIN.
+2023-08-29 22:51:53.754 +03:00 [DBG] Connection id "0HMT8P5IE2L01" accepted.
+2023-08-29 22:51:53.755 +03:00 [DBG] Connection id "0HMT8P5IE2L01" started.
+2023-08-29 22:51:53.755 +03:00 [DBG] Connection id "0HMT8P5IE2L02" accepted.
+2023-08-29 22:51:53.756 +03:00 [DBG] Connection id "0HMT8P5IE2L02" started.
+2023-08-29 22:51:53.760 +03:00 [DBG] Connection id "0HMT8P5IE2L01" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:51:53.762 +03:00 [DBG] Connection id "0HMT8P5IE2L01" disconnecting.
+2023-08-29 22:51:53.763 +03:00 [DBG] Connection id "0HMT8P5IE2L01" stopped.
+2023-08-29 22:51:53.773 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 22:51:53.774 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-29 22:51:53.785 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 22:51:53.786 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 22:51:53.786 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:51:53.792 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 22:51:53.792 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-29 22:51:53.793 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:51:53.801 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 22:51:53.802 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 22:51:53.802 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 22:51:53.802 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 22:51:53.802 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 22:51:53.802 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 22:51:53.803 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:51:53.803 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:51:53.805 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 22:51:53.805 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 22:51:53.806 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:51:53.806 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:51:53.806 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 22:51:53.808 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 22:51:53.811 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-08-29 22:51:53.813 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 9.3211ms
+2023-08-29 22:51:53.813 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:51:53.813 +03:00 [DBG] Connection id "0HMT8P5IE2L02" completed keep alive response.
+2023-08-29 22:51:53.814 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - - - 204 - - 42.3106ms
+2023-08-29 22:52:03.820 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 22:52:03.821 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 22:52:03.822 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 22:52:03.822 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:52:03.823 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 22:52:03.825 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:52:03.826 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 22:52:03.829 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 22:52:03.829 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 22:52:03.830 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 22:52:03.830 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 22:52:03.831 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 22:52:03.831 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:52:03.831 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:52:03.832 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 22:52:03.832 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 22:52:03.832 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:52:03.832 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:52:03.832 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 22:52:03.833 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 22:52:03.837 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-08-29 22:52:03.839 +03:00 [DBG] No information found on request to perform content negotiation.
+2023-08-29 22:52:03.840 +03:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2023-08-29 22:52:03.840 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2023-08-29 22:52:03.841 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-08-29 22:52:03.891 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 60.1776ms
+2023-08-29 22:52:03.891 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:52:03.891 +03:00 [DBG] Connection id "0HMT8P5IE2L02" completed keep alive response.
+2023-08-29 22:52:03.891 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - - - 404 161 application/problem+json;+charset=utf-8 70.9052ms
+2023-08-29 22:53:22.539 +03:00 [INF] Application is shutting down...
+2023-08-29 22:53:22.540 +03:00 [DBG] Hosting stopping
+2023-08-29 22:53:22.552 +03:00 [DBG] Connection id "0HMT8P5IE2L02" disconnecting.
+2023-08-29 22:53:22.553 +03:00 [DBG] Connection id "0HMT8P5IE2L02" stopped.
+2023-08-29 22:53:22.553 +03:00 [DBG] Connection id "0HMT8P5IE2L02" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:53:22.556 +03:00 [DBG] Hosting stopped
+2023-08-29 22:53:25.898 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-29 22:53:25.938 +03:00 [DBG] Hosting starting
+2023-08-29 22:53:25.953 +03:00 [INF] Now listening on: http://localhost:5282
+2023-08-29 22:53:25.953 +03:00 [DBG] Loaded hosting startup assembly SimpleBank.API
+2023-08-29 22:53:25.953 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-29 22:53:25.953 +03:00 [INF] Hosting environment: Development
+2023-08-29 22:53:25.953 +03:00 [INF] Content root path: /Users/abdizamed/Projects/SimpleBank.API
+2023-08-29 22:53:25.953 +03:00 [DBG] Hosting started
+2023-08-29 22:53:28.109 +03:00 [DBG] Connection id "0HMT8P6EI0NJL" received FIN.
+2023-08-29 22:53:28.111 +03:00 [DBG] Connection id "0HMT8P6EI0NJL" accepted.
+2023-08-29 22:53:28.112 +03:00 [DBG] Connection id "0HMT8P6EI0NJL" started.
+2023-08-29 22:53:28.112 +03:00 [DBG] Connection id "0HMT8P6EI0NJM" accepted.
+2023-08-29 22:53:28.112 +03:00 [DBG] Connection id "0HMT8P6EI0NJM" started.
+2023-08-29 22:53:28.116 +03:00 [DBG] Connection id "0HMT8P6EI0NJL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:53:28.118 +03:00 [DBG] Connection id "0HMT8P6EI0NJL" disconnecting.
+2023-08-29 22:53:28.119 +03:00 [DBG] Connection id "0HMT8P6EI0NJL" stopped.
+2023-08-29 22:53:28.127 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 22:53:28.128 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-29 22:53:28.138 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 22:53:28.139 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 22:53:28.140 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:53:28.145 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 22:53:28.146 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-29 22:53:28.147 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:53:28.153 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 22:53:28.154 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 22:53:28.154 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 22:53:28.154 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 22:53:28.154 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 22:53:28.154 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 22:53:28.155 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:53:28.155 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:53:28.157 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 22:53:28.158 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 22:53:28.158 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:53:28.158 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:53:28.158 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 22:53:28.160 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 22:53:28.163 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-08-29 22:53:28.164 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 8.8757ms
+2023-08-29 22:53:28.165 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:53:28.165 +03:00 [DBG] Connection id "0HMT8P6EI0NJM" completed keep alive response.
+2023-08-29 22:53:28.166 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - - - 204 - - 39.2266ms
+2023-08-29 22:54:21.041 +03:00 [INF] Application is shutting down...
+2023-08-29 22:54:21.043 +03:00 [DBG] Hosting stopping
+2023-08-29 22:54:21.053 +03:00 [DBG] Connection id "0HMT8P6EI0NJM" disconnecting.
+2023-08-29 22:54:21.054 +03:00 [DBG] Connection id "0HMT8P6EI0NJM" stopped.
+2023-08-29 22:54:21.055 +03:00 [DBG] Connection id "0HMT8P6EI0NJM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:54:21.057 +03:00 [DBG] Hosting stopped
+2023-08-29 22:54:24.489 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-29 22:54:24.529 +03:00 [DBG] Hosting starting
+2023-08-29 22:54:24.544 +03:00 [INF] Now listening on: http://localhost:5282
+2023-08-29 22:54:24.544 +03:00 [DBG] Loaded hosting startup assembly SimpleBank.API
+2023-08-29 22:54:24.545 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-29 22:54:24.545 +03:00 [INF] Hosting environment: Development
+2023-08-29 22:54:24.545 +03:00 [INF] Content root path: /Users/abdizamed/Projects/SimpleBank.API
+2023-08-29 22:54:24.545 +03:00 [DBG] Hosting started
+2023-08-29 22:54:26.885 +03:00 [DBG] Connection id "0HMT8P702HGIF" received FIN.
+2023-08-29 22:54:26.892 +03:00 [DBG] Connection id "0HMT8P702HGIF" accepted.
+2023-08-29 22:54:26.895 +03:00 [DBG] Connection id "0HMT8P702HGIG" accepted.
+2023-08-29 22:54:26.896 +03:00 [DBG] Connection id "0HMT8P702HGIG" started.
+2023-08-29 22:54:26.896 +03:00 [DBG] Connection id "0HMT8P702HGIF" started.
+2023-08-29 22:54:26.900 +03:00 [DBG] Connection id "0HMT8P702HGIF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:54:26.903 +03:00 [DBG] Connection id "0HMT8P702HGIF" disconnecting.
+2023-08-29 22:54:26.904 +03:00 [DBG] Connection id "0HMT8P702HGIF" stopped.
+2023-08-29 22:54:26.914 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 22:54:26.915 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-29 22:54:26.925 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 22:54:26.926 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 22:54:26.926 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:54:26.932 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 22:54:26.933 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-29 22:54:26.933 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:54:26.940 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 22:54:26.941 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 22:54:26.941 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 22:54:26.941 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 22:54:26.941 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 22:54:26.941 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 22:54:26.942 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:54:26.942 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:54:26.944 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 22:54:26.945 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 22:54:26.945 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:54:26.945 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:54:26.945 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 22:54:26.947 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 22:54:26.950 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-08-29 22:54:26.951 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 8.6338ms
+2023-08-29 22:54:26.952 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:54:26.952 +03:00 [DBG] Connection id "0HMT8P702HGIG" completed keep alive response.
+2023-08-29 22:54:26.953 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - - - 204 - - 40.1492ms
+2023-08-29 22:55:24.069 +03:00 [INF] Application is shutting down...
+2023-08-29 22:55:24.071 +03:00 [DBG] Hosting stopping
+2023-08-29 22:55:24.081 +03:00 [DBG] Connection id "0HMT8P702HGIG" disconnecting.
+2023-08-29 22:55:24.082 +03:00 [DBG] Connection id "0HMT8P702HGIG" stopped.
+2023-08-29 22:55:24.083 +03:00 [DBG] Connection id "0HMT8P702HGIG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:55:24.085 +03:00 [DBG] Hosting stopped
+2023-08-29 22:55:26.662 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-29 22:55:26.702 +03:00 [DBG] Hosting starting
+2023-08-29 22:55:26.719 +03:00 [INF] Now listening on: http://localhost:5282
+2023-08-29 22:55:26.719 +03:00 [DBG] Loaded hosting startup assembly SimpleBank.API
+2023-08-29 22:55:26.719 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-29 22:55:26.719 +03:00 [INF] Hosting environment: Development
+2023-08-29 22:55:26.719 +03:00 [INF] Content root path: /Users/abdizamed/Projects/SimpleBank.API
+2023-08-29 22:55:26.719 +03:00 [DBG] Hosting started
+2023-08-29 22:55:34.024 +03:00 [DBG] Connection id "0HMT8P7K2QOGF" received FIN.
+2023-08-29 22:55:34.034 +03:00 [DBG] Connection id "0HMT8P7K2QOGF" accepted.
+2023-08-29 22:55:34.037 +03:00 [DBG] Connection id "0HMT8P7K2QOGF" started.
+2023-08-29 22:55:34.038 +03:00 [DBG] Connection id "0HMT8P7K2QOGG" accepted.
+2023-08-29 22:55:34.039 +03:00 [DBG] Connection id "0HMT8P7K2QOGG" started.
+2023-08-29 22:55:34.042 +03:00 [DBG] Connection id "0HMT8P7K2QOGF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:55:34.045 +03:00 [DBG] Connection id "0HMT8P7K2QOGF" disconnecting.
+2023-08-29 22:55:34.045 +03:00 [DBG] Connection id "0HMT8P7K2QOGF" stopped.
+2023-08-29 22:55:34.055 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 22:55:34.056 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-29 22:55:34.068 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 22:55:34.069 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 22:55:34.069 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:55:34.075 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 22:55:34.076 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-29 22:55:34.077 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:55:34.084 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 22:55:34.084 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 22:55:34.084 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 22:55:34.084 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 22:55:34.084 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 22:55:34.084 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 22:55:34.085 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:55:34.085 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:55:34.087 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 22:55:34.087 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 22:55:34.088 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:55:34.088 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:55:34.088 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 22:55:34.090 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 22:55:34.093 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-08-29 22:55:34.094 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 8.7175ms
+2023-08-29 22:55:34.095 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:55:34.095 +03:00 [DBG] Connection id "0HMT8P7K2QOGG" completed keep alive response.
+2023-08-29 22:55:34.095 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - - - 204 - - 41.5460ms
+2023-08-29 22:55:49.464 +03:00 [INF] Application is shutting down...
+2023-08-29 22:55:49.465 +03:00 [DBG] Hosting stopping
+2023-08-29 22:55:49.476 +03:00 [DBG] Connection id "0HMT8P7K2QOGG" disconnecting.
+2023-08-29 22:55:49.477 +03:00 [DBG] Connection id "0HMT8P7K2QOGG" stopped.
+2023-08-29 22:55:49.477 +03:00 [DBG] Connection id "0HMT8P7K2QOGG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:55:49.480 +03:00 [DBG] Hosting stopped
+2023-08-29 22:55:50.962 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-29 22:55:51.002 +03:00 [DBG] Hosting starting
+2023-08-29 22:55:51.018 +03:00 [INF] Now listening on: http://localhost:5282
+2023-08-29 22:55:51.018 +03:00 [DBG] Loaded hosting startup assembly SimpleBank.API
+2023-08-29 22:55:51.018 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-29 22:55:51.018 +03:00 [INF] Hosting environment: Development
+2023-08-29 22:55:51.018 +03:00 [INF] Content root path: /Users/abdizamed/Projects/SimpleBank.API
+2023-08-29 22:55:51.018 +03:00 [DBG] Hosting started
+2023-08-29 22:55:53.578 +03:00 [DBG] Connection id "0HMT8P7PTA9DR" received FIN.
+2023-08-29 22:55:53.589 +03:00 [DBG] Connection id "0HMT8P7PTA9DR" accepted.
+2023-08-29 22:55:53.590 +03:00 [DBG] Connection id "0HMT8P7PTA9DR" started.
+2023-08-29 22:55:53.591 +03:00 [DBG] Connection id "0HMT8P7PTA9DS" accepted.
+2023-08-29 22:55:53.591 +03:00 [DBG] Connection id "0HMT8P7PTA9DS" started.
+2023-08-29 22:55:53.594 +03:00 [DBG] Connection id "0HMT8P7PTA9DR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:55:53.597 +03:00 [DBG] Connection id "0HMT8P7PTA9DR" disconnecting.
+2023-08-29 22:55:53.597 +03:00 [DBG] Connection id "0HMT8P7PTA9DR" stopped.
+2023-08-29 22:55:53.608 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 22:55:53.609 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-29 22:55:53.618 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 22:55:53.620 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 22:55:53.620 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:55:53.625 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 22:55:53.626 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-29 22:55:53.626 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:55:53.633 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 22:55:53.633 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 22:55:53.633 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 22:55:53.634 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 22:55:53.634 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 22:55:53.634 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 22:55:53.634 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:55:53.635 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:55:53.637 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 22:55:53.637 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 22:55:53.637 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:55:53.637 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:55:53.638 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 22:55:53.640 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 22:55:53.643 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-08-29 22:55:53.644 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 8.864ms
+2023-08-29 22:55:53.645 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:55:53.645 +03:00 [DBG] Connection id "0HMT8P7PTA9DS" completed keep alive response.
+2023-08-29 22:55:53.646 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - - - 204 - - 38.7653ms
+2023-08-29 22:56:20.438 +03:00 [INF] Application is shutting down...
+2023-08-29 22:56:20.439 +03:00 [DBG] Hosting stopping
+2023-08-29 22:56:20.450 +03:00 [DBG] Connection id "0HMT8P7PTA9DS" disconnecting.
+2023-08-29 22:56:20.451 +03:00 [DBG] Connection id "0HMT8P7PTA9DS" stopped.
+2023-08-29 22:56:20.451 +03:00 [DBG] Connection id "0HMT8P7PTA9DS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:56:20.454 +03:00 [DBG] Hosting stopped
+2023-08-29 22:56:22.973 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-29 22:56:23.011 +03:00 [DBG] Hosting starting
+2023-08-29 22:56:23.026 +03:00 [INF] Now listening on: http://localhost:5282
+2023-08-29 22:56:23.026 +03:00 [DBG] Loaded hosting startup assembly SimpleBank.API
+2023-08-29 22:56:23.026 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-29 22:56:23.026 +03:00 [INF] Hosting environment: Development
+2023-08-29 22:56:23.026 +03:00 [INF] Content root path: /Users/abdizamed/Projects/SimpleBank.API
+2023-08-29 22:56:23.026 +03:00 [DBG] Hosting started
+2023-08-29 22:56:24.114 +03:00 [DBG] Connection id "0HMT8P830GUR1" received FIN.
+2023-08-29 22:56:24.122 +03:00 [DBG] Connection id "0HMT8P830GUR1" accepted.
+2023-08-29 22:56:24.123 +03:00 [DBG] Connection id "0HMT8P830GUR1" started.
+2023-08-29 22:56:24.123 +03:00 [DBG] Connection id "0HMT8P830GUR2" accepted.
+2023-08-29 22:56:24.124 +03:00 [DBG] Connection id "0HMT8P830GUR2" started.
+2023-08-29 22:56:24.127 +03:00 [DBG] Connection id "0HMT8P830GUR1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 22:56:24.129 +03:00 [DBG] Connection id "0HMT8P830GUR1" disconnecting.
+2023-08-29 22:56:24.130 +03:00 [DBG] Connection id "0HMT8P830GUR1" stopped.
+2023-08-29 22:56:24.140 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 22:56:24.142 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-29 22:56:24.152 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 22:56:24.153 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 22:56:24.153 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:56:24.159 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 22:56:24.159 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-29 22:56:24.160 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:56:24.167 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 22:56:24.168 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 22:56:24.168 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 22:56:24.168 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 22:56:24.168 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 22:56:24.168 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 22:56:24.169 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:56:24.169 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 22:56:24.171 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 22:56:24.172 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 22:56:24.172 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:56:24.172 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 22:56:24.172 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 22:56:24.174 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 22:56:24.177 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-08-29 22:56:24.179 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 8.8127ms
+2023-08-29 22:56:24.179 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 22:56:24.180 +03:00 [DBG] Connection id "0HMT8P830GUR2" completed keep alive response.
+2023-08-29 22:56:24.180 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - - - 204 - - 41.0407ms
+2023-08-29 22:58:35.222 +03:00 [DBG] Connection id "0HMT8P830GUR2" disconnecting.
+2023-08-29 22:58:35.224 +03:00 [DBG] Connection id "0HMT8P830GUR2" stopped.
+2023-08-29 22:58:35.233 +03:00 [DBG] Connection id "0HMT8P830GUR2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 23:03:05.335 +03:00 [INF] Application is shutting down...
+2023-08-29 23:03:05.336 +03:00 [DBG] Hosting stopping
+2023-08-29 23:03:05.343 +03:00 [DBG] Hosting stopped
+2023-08-29 23:03:07.981 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-29 23:03:08.018 +03:00 [DBG] Hosting starting
+2023-08-29 23:03:08.032 +03:00 [INF] Now listening on: http://localhost:5282
+2023-08-29 23:03:08.033 +03:00 [DBG] Loaded hosting startup assembly SimpleBank.API
+2023-08-29 23:03:08.033 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-29 23:03:08.033 +03:00 [INF] Hosting environment: Development
+2023-08-29 23:03:08.033 +03:00 [INF] Content root path: /Users/abdizamed/Projects/SimpleBank.API
+2023-08-29 23:03:08.033 +03:00 [DBG] Hosting started
+2023-08-29 23:03:16.516 +03:00 [DBG] Connection id "0HMT8PBTTG9DP" received FIN.
+2023-08-29 23:03:16.527 +03:00 [DBG] Connection id "0HMT8PBTTG9DP" accepted.
+2023-08-29 23:03:16.527 +03:00 [DBG] Connection id "0HMT8PBTTG9DP" started.
+2023-08-29 23:03:16.528 +03:00 [DBG] Connection id "0HMT8PBTTG9DQ" accepted.
+2023-08-29 23:03:16.528 +03:00 [DBG] Connection id "0HMT8PBTTG9DQ" started.
+2023-08-29 23:03:16.532 +03:00 [DBG] Connection id "0HMT8PBTTG9DP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-29 23:03:16.534 +03:00 [DBG] Connection id "0HMT8PBTTG9DP" disconnecting.
+2023-08-29 23:03:16.534 +03:00 [DBG] Connection id "0HMT8PBTTG9DP" stopped.
+2023-08-29 23:03:16.545 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - -
+2023-08-29 23:03:16.546 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-29 23:03:16.555 +03:00 [DBG] 1 candidate(s) found for the request path '/api/branches/BRSOM001'
+2023-08-29 23:03:16.556 +03:00 [DBG] Endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)' with route pattern 'api/branches/{id}' is valid for the request path '/api/branches/BRSOM001'
+2023-08-29 23:03:16.557 +03:00 [DBG] Request matched endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 23:03:16.562 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-08-29 23:03:16.563 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-29 23:03:16.564 +03:00 [INF] Executing endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 23:03:16.571 +03:00 [INF] Route matched with {action = "DeleteBranch", controller = "Branch"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteBranch(System.String) on controller SimpleBank.API.Controllers.BranchController (SimpleBank.API).
+2023-08-29 23:03:16.571 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-29 23:03:16.572 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-29 23:03:16.572 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-29 23:03:16.572 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-29 23:03:16.572 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-29 23:03:16.573 +03:00 [DBG] Executing controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 23:03:16.574 +03:00 [DBG] Executed controller factory for controller SimpleBank.API.Controllers.BranchController (SimpleBank.API)
+2023-08-29 23:03:16.575 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' ...
+2023-08-29 23:03:16.576 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.String' using the name 'id' in request data ...
+2023-08-29 23:03:16.576 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 23:03:16.576 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.String'.
+2023-08-29 23:03:16.577 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.String' ...
+2023-08-29 23:03:16.579 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.String'.
+2023-08-29 23:03:16.581 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-08-29 23:03:16.583 +03:00 [INF] Executed action SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API) in 9.2245ms
+2023-08-29 23:03:16.583 +03:00 [INF] Executed endpoint 'SimpleBank.API.Controllers.BranchController.DeleteBranch (SimpleBank.API)'
+2023-08-29 23:03:16.584 +03:00 [DBG] Connection id "0HMT8PBTTG9DQ" completed keep alive response.
+2023-08-29 23:03:16.584 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5282/api/branches/BRSOM001 - - - 204 - - 40.7418ms
+2023-08-29 23:03:39.901 +03:00 [DBG] Connection id "0HMT8PBTTG9DQ" received FIN.
+2023-08-29 23:03:39.904 +03:00 [DBG] Connection id "0HMT8PBTTG9DQ" disconnecting.
+2023-08-29 23:03:39.906 +03:00 [DBG] Connection id "0HMT8PBTTG9DQ" stopped.
+2023-08-29 23:03:39.908 +03:00 [DBG] Connection id "0HMT8PBTTG9DQ" sending FIN because: "The Socket transport's send loop completed gracefully."

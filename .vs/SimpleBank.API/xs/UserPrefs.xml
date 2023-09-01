@@ -1,3 +1,38 @@
-﻿<Properties StartupConfiguration="{A5788CC4-2F28-48C1-B3B2-738331ED7760}|https">
+﻿<Properties StartupConfiguration="{A5788CC4-2F28-48C1-B3B2-738331ED7760}|http">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.SimpleBank.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/BranchController.cs">
+    <Files>
+      <File FileName="Models/BranchDto.cs" />
+      <File FileName="Models/CreateAndUpdateDto.cs" />
+      <File FileName="Controllers/BranchController.cs" Line="159" Column="43" />
+      <File FileName="Program.cs" />
+      <File FileName="appsettings.Development.json" />
+      <File FileName="logs/branch20230829.txt" />
+      <File FileName="Services/LocalMailService.cs" />
+      <File FileName="Services/CloudMailService.cs" />
+      <File FileName="Models/TellerDto.cs" />
+      <File FileName="BranchDataStore.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SimpleBank.API" selected="True">
+            <Node name="SimpleBank.API">
+              <Node name="Controllers" expanded="True" />
+              <Node name="logs" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
 </Properties>

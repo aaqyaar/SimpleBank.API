@@ -6,7 +6,6 @@ namespace SimpleBank.API
 	{
 		public List<BranchDto> branches { get; set; }
 
-		public static BranchDataStore Current { get; } = new BranchDataStore();
 
 		public BranchDataStore()
 		{
