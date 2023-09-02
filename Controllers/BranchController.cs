@@ -35,6 +35,7 @@ namespace SimpleBank.API.Controllers
             }
             return Ok(_mapper.Map<IEnumerable<BranchWithoutTellerDto>>(data));
         }
+
         [HttpGet("{id}", Name = "GetBranch")]
 		public async Task<IActionResult> GetBranch(string id, bool includeTeller = false)
 		{
@@ -96,32 +97,34 @@ namespace SimpleBank.API.Controllers
         }
         
         [HttpGet("{id}/tellers")]
-		public ActionResult<IEnumerable<TellerDto>> GetTellers(string id)
+		public async Task<ActionResult<IEnumerable<TellerDto>>> GetTellers(string id)
 		{
-            var branch = _branchStore.branches.FirstOrDefault((item) => item.id.Equals(id));
-			if (branch == null)
-			{
-				return NotFound();
-			}
-			return Ok(branch.tellers);
-        }
-
-        [HttpGet("{id}/tellers/{tellerId}", Name = "GetTeller")]
-        public ActionResult<IEnumerable<TellerDto>> GetTeller(string id, string tellerId)
-        {
-            var branch = _branchStore.branches.FirstOrDefault((item) => item.id.Equals(id));
-            if (branch == null)
+            if (!await _repository.isBranchExistAsync(id))
             {
+                _logger.LogInformation($"Branch with id {id} not exists");
                 return NotFound();
             }
-            var teller = branch.tellers.FirstOrDefault((item) => item.id.Equals(tellerId));
-            if (teller == null)
+            var data = await _repository.GetTellersAsync(id);
+            return Ok(_mapper.Map<IEnumerable<TellerDto>>(data));
+         }
+
+        //ActionResult<IEnumerable<TellerDto>
+        [HttpGet("{id}/tellers/{tellerId}", Name = "GetTeller")]
+        public async Task<ActionResult<TellerDto>> GetTeller(string id, string tellerId)
+        {
+            if (!await _repository.isBranchExistAsync(id))
+            {
+                _logger.LogInformation($"Branch with id {id} not exists");
+                return NotFound();
+            }           
+            var data = await _repository.GetTellerAsync(id, tellerId);
+            if (data == null)
             {
                 _logger.LogWarning($"Branch with teller {tellerId} not found");
 
                 return NotFound();
             }
-            return Ok(teller);
+            return Ok(_mapper.Map<TellerDto>(data));
         }
         [HttpPost("{id}/tellers")]
         public ActionResult<TellerDto> CreateTeller([FromRoute] string id, [FromBody] TellerCreationDto teller)        
