@@ -32,14 +32,19 @@ namespace SimpleBank.API.Services
             return await context.Branches.OrderBy(b => b.Id).ToListAsync();
         }
 
-        public Task<Teller> GetTellerAsync(string branchId, string tellerId)
+        public async Task<bool> isBranchExistAsync(string branchId)
         {
-            throw new NotImplementedException();
+            return await context.Branches.AnyAsync(b => b.Id == branchId);
         }
 
-        public Task<IEnumerable<Teller>> GetTellersAsync(string branchId)
+        public async Task<Teller> GetTellerAsync(string branchId, string tellerId)
         {
-            throw new NotImplementedException();
+            return await context.Tellers.Where(t => t.BranchId == branchId && t.Id == tellerId).FirstOrDefaultAsync();
+        }
+
+        public async Task<IEnumerable<Teller>> GetTellersAsync(string branchId)
+        {
+            return await context.Tellers.Where(t => t.BranchId == branchId).ToListAsync();
         }
     }
 }

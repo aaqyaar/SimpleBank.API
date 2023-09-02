@@ -9,6 +9,8 @@ namespace SimpleBank.API.Services
 
 		Task<Branch?> GetBranchAsync(string branchId, bool includeTellers);
 
+		Task<bool> isBranchExistAsync(string branchId);
+
 		Task<IEnumerable<Teller>> GetTellersAsync(string branchId);
 
 		Task<Teller> GetTellerAsync(string branchId, string tellerId);
