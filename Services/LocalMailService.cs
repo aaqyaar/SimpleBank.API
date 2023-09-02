@@ -3,9 +3,14 @@
     public class LocalMailService : IMailService
     {
 
-        private readonly string from = "info@sbank.com";
-        private readonly string to = "abdizamedmo@gmail.com";
+        private readonly string from = string.Empty;
+        private readonly string to = string.Empty;
 
+        public LocalMailService(IConfiguration configuration)
+        {
+            from = configuration["mailSettings:fromAddress"];
+            to = configuration["mailSettings:toAddress"];
+        }
 
         public void Send(string subject, string message)
         {

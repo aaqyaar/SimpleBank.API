@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.StaticFiles;
 using Serilog;
 using SimpleBank.API;
+using SimpleBank.API.DbContexts;
 using SimpleBank.API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,7 +20,9 @@ builder.Services.AddControllers((options) => options.ReturnHttpNotAcceptable = t
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<BranchDataStore>();
- 
+builder.Services.AddDbContext<BranchContext>();
+builder.Services.AddScoped<IBranchRepository, BranchRepository>();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());    
 #if DEBUG
 builder.Services.AddTransient<IMailService, LocalMailService>();
 #else

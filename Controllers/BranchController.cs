@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using SimpleBank.API.Models;
 using SimpleBank.API.Services;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace SimpleBank.API.Controllers
 {
@@ -11,30 +13,45 @@ namespace SimpleBank.API.Controllers
         private readonly ILogger<BranchController> _logger;
         private readonly IMailService _mailService;
         private readonly BranchDataStore _branchStore;
-
-         public BranchController(ILogger<BranchController> logger, IMailService mailService, BranchDataStore branchStore)
+        private readonly IBranchRepository _repository;
+        private readonly IMapper _mapper;
+        
+         public BranchController(ILogger<BranchController> logger, IMailService mailService, BranchDataStore branchStore, IBranchRepository repository, IMapper mapper)
         {
             _logger = logger;
             _mailService = mailService;
             _branchStore = branchStore ?? throw new ArgumentException(nameof(BranchController));
+            _repository = repository ?? throw new ArgumentException(nameof(repository));
+            _mapper = mapper ?? throw new ArgumentException(nameof(mapper));
         }
 
          [HttpGet]
-		public ActionResult<IEnumerable<BranchDto>> GetBranches()
+		public async Task<IActionResult> GetBranches(bool includeTeller = true)
 		{
-			return Ok(_branchStore.branches);
-		}
-		[HttpGet("{id}", Name = "GetBranch")]
-		public ActionResult<BranchDto> GetBranch(string id)
+            var data = await _repository.GetBranchesAsync(includeTeller);
+            if (includeTeller)
+            {
+                 return Ok(_mapper.Map<IEnumerable<BranchDto>>(data));
+            }
+            return Ok(_mapper.Map<IEnumerable<BranchWithoutTellerDto>>(data));
+        }
+        [HttpGet("{id}", Name = "GetBranch")]
+		public async Task<IActionResult> GetBranch(string id, bool includeTeller = false)
 		{
- 			var branch = _branchStore.branches.FirstOrDefault((item) => item.id.Equals(id));
-			// if the isn't exist return null
+            var branch = await _repository.GetBranchAsync(id, includeTeller);
+ 			// if the isn't exist return null
 			if (branch == null)
 			{
                 return NotFound();
             }
-            return Ok(branch);
-		}
+
+            if (includeTeller)
+            {
+                return Ok(_mapper.Map<BranchDto>(branch));
+            }
+            return Ok(_mapper.Map<BranchWithoutTellerDto>(branch));
+
+        }
 
         [HttpPost]
         public ActionResult<BranchDto> CreateBranch([FromBody] BranchCreationDto branch)
